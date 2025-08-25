@@ -32,6 +32,7 @@ The site will also be available online. A link will be added here later.
 ---
 
 ## Project Structure
+
 /assets
   ├── script.js
   ├── style.scss
