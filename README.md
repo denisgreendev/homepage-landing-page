@@ -33,21 +33,23 @@ The site will also be available online. A link will be added here later.
 
 ## Project Structure
 
-/assets
-  ├── script.js
-  ├── style.scss
-  ├── style.css
-/image
-  ├── banner/
-  ├── header/
-  └── products/
-      ├── dark_sneakers/
-      ├── red_sneakers/
-      └── white_sneakers/
-index.html
-README.md
+```
+Project Root
+├── assets
+│   ├── script.js
+│   ├── style.scss
+│   └── style.css
+├── image
+│   ├── banner
+│   ├── header
+│   └── products
+│       ├── dark_sneakers
+│       ├── red_sneakers
+│       └── white_sneakers
+├── index.html
+└── README.md
+```
 
----
 
 ## Page Structure
 
