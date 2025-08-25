@@ -115,40 +115,40 @@ hr {
   }
 }
 
-.swiper {
+.swiper.swiper-featured {
   margin-left: 16px;
 }
 @media screen and (min-width: 768px) {
-  .swiper {
+  .swiper.swiper-featured {
     margin-left: 20px;
   }
 }
 @media screen and (min-width: 1281px) {
-  .swiper {
+  .swiper.swiper-featured {
     margin-left: 0px;
   }
 }
-.swiper .product-card {
+.swiper.swiper-featured .product-card {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-.swiper .product-card .product-card__img {
+.swiper.swiper-featured .product-card .product-card__img {
   line-height: 0;
   border-radius: 8px;
   margin-bottom: 20px;
 }
-.swiper .product-card .product-card__img img {
+.swiper.swiper-featured .product-card .product-card__img img {
   width: 100%;
   height: 100%;
 }
-.swiper .product-card h3 {
+.swiper.swiper-featured .product-card h3 {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 600;
   margin-bottom: 11px;
 }
-.swiper .product-card p {
+.swiper.swiper-featured .product-card p {
   font-size: 16px;
   line-height: 1.5;
   color: #4d4c4c;
