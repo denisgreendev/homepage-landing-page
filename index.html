@@ -3,16 +3,612 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Borel&family=Oswald:wght@300;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title> Stellar Soft</title>
+
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="assets/style.css">
 	</head>
 
 	<body>
 
+		<section>
+			<header class="header">
+				<div class="container__lg">
+					<div class="header__inner">
+						<div class="header__logo">
+								<img class="logo-img" src="image/header/Logo.png"  alt="Logo" />
+						</div>
+
+						<nav class="header__nav header__nav--mobile">
+
+							<button id="burger-menu-open-btn" type="button" class="burger-menu-open-btn">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21 5.25H3M21 12H3M21 18.75H3" stroke="#111111" stroke-width="1.5"/>
+								</svg>
+							</button>
+
+
+							<div class="header__burger-menu">
+								<div class="burger-menu__nav-wrap">
+
+									<button id="burger-menu-close-btn" type="button" class="burger-menu-close-btn">
+										<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 30 30">
+											<path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"></path>
+										</svg>
+									</button>
+
+									<a href="#">New & Featured</a>
+									<a href="#">Men</a>
+									<a href="#">Women</a>
+									<a href="#">Kids</a>
+								</div>
+							</div>
+
+						</nav>
+
+
+
+						<nav class="header__nav header__nav--desktop">
+							<a href="#">New & Featured</a>
+							<a href="#">Men</a>
+							<a href="#">Women</a>
+							<a href="#">Kids</a>
+						</nav>
+
+
+
+						<a href="#cart" class="header__cart-icon" aria-label="open cart">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.55514 14.2572C2.83668 10.9043 2.47745 9.22793 3.378 8.11397C4.27855 7 5.99302 7 9.42196 7H14.5781C18.0071 7 19.7215 7 20.6221 8.11397C21.5226 9.22793 21.1634 10.9043 20.4449 14.2572L20.0164 16.2572C19.5294 18.5297 19.2859 19.666 18.4608 20.333C17.6357 21 16.4737 21 14.1495 21H9.85053C7.52639 21 6.36432 21 5.53925 20.333C4.71418 19.666 4.47069 18.5297 3.98372 16.2572L3.55514 14.2572Z" stroke="#111111" stroke-width="1.5"/>
+								<path d="M3 11H21" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M10 14H14" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M18 9L15 3" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M6 9L9 3" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</header>
+		</section>
+
+
+		<section>
+			<div class="container__lg">
+				<div class="banner-wrapper">
+
+					<div class="banner-content">
+						<h1>MORE THAN JUST SHOES — IT’S A PART OF YOUR STORY.</h1>
+						<p>Original sneakers from Nike and other top brands that make every step <br> feel special.</p>
+						<button>Shop the Collection</button>
+					</div>
+
+					<div class="swiper swiper-banner" id="bannerSwiper">
+						<div class="swiper-wrapper">
+
+							<!-- Slide 1 -->
+							<div class="swiper-slide">
+								<picture>
+									<source media="(min-width: 575px)" srcset="image/banner/bunner_swiper_dsk.png">
+									<img src="image/banner/bunner_swiper_mob.png" alt="Banner 1" class="slide-image">
+								</picture>
+							</div>
+
+							<!-- Slide 2 -->
+							<div class="swiper-slide">
+								<picture>
+									<source media="(min-width: 575px)" srcset="image/banner/bunner_swiper_dsk.png">
+									<img src="image/banner/bunner_swiper_mob.png" alt="Banner 1" class="slide-image">
+								</picture>
+							</div>
+
+							<!-- Slide 2 -->
+							<div class="swiper-slide">
+								<picture>
+									<source media="(min-width: 575px)" srcset="image/banner/bunner_swiper_dsk.png">
+									<img src="image/banner/bunner_swiper_mob.png" alt="Banner 1" class="slide-image">
+								</picture>
+							</div>
+						</div>
+
+						<!-- Pagination -->
+						<div class="swiper-pagination"></div>
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<hr>
+
+		<section>
+			<div class="container__md">
+				<h2 class="product-cards__title">Featured Collection</h2>
+
+				<div class="swiper swiper-featured" id="productCardsSwiper">
+					<div class="swiper-wrapper">
+						<!-- Slide 1 -->
+						<div class="swiper-slide">
+							<div class="product-card">
+								<div class="product-card__img">
+									<img src="image/products/nike_streakfly_2.png" alt="Nike Streakfly 2">
+								</div>
+								<h3>Nike Streakfly 2</h3>
+								<p>$300.00</p>
+							</div>
+						</div>
+
+						<!-- Slide 2 -->
+						<div class="swiper-slide">
+							<div class="product-card">
+								<div class="product-card__img">
+									<img src="image/products/nike_pegasus_premium.png" alt="Nike Pegasus Premium">
+								</div>
+								<h3>Nike Pegasus Premium</h3>
+								<p>$350.00</p>
+							</div>
+						</div>
+
+						<!-- Slide 3 -->
+						<div class="swiper-slide">
+							<div class="product-card">
+								<div class="product-card__img">
+									<img src="image/products/nike_pegasus_41.png" alt="Nike Pegasus 41">
+								</div>
+								<h3>Nike Pegasus 41</h3>
+								<p>$280.00</p>
+							</div>
+						</div>
+
+						<!-- Slide 4 -->
+						<div class="swiper-slide">
+							<div class="product-card">
+								<div class="product-card__img">
+									<img src="image/products/nike_revolution_7.png" alt="Nike Revolution 7">
+								</div>
+								<h3>Nike Revolution 7</h3>
+								<p>$440.00</p>
+							</div>
+						</div>
+
+						<!-- Slide 5 -->
+						<div class="swiper-slide">
+							<div class="product-card">
+								<div class="product-card__img">
+									<img src="image/products/nike_streakfly_2.png" alt="Nike Streakfly 2">
+								</div>
+								<h3>Nike Streakfly 2</h3>
+								<p>$300.00</p>
+							</div>
+						</div>
+
+						<!-- Slide 6 -->
+						<div class="swiper-slide">
+							<div class="product-card">
+								<div class="product-card__img">
+									<img src="image/products/nike_pegasus_premium.png" alt="Nike Pegasus Premium">
+								</div>
+								<h3>Nike Pegasus Premium</h3>
+								<p>$350.00</p>
+							</div>
+						</div>
+
+						<!-- Slide 7 -->
+						<div class="swiper-slide">
+							<div class="product-card">
+								<div class="product-card__img">
+									<img src="image/products/nike_pegasus_41.png" alt="Nike Pegasus 41">
+								</div>
+								<h3>Nike Pegasus 41</h3>
+								<p>$280.00</p>
+							</div>
+						</div>
+
+						<!-- Slide 8 -->
+						<div class="swiper-slide">
+							<div class="product-card">
+								<div class="product-card__img">
+									<img src="image/products/nike_revolution_7.png" alt="Nike Revolution 7">
+								</div>
+								<h3>Nike Revolution 7</h3>
+								<p>$440.00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-button-prev featured-nav">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" />
+						<path d="M9.38329 9.85697L9.02974 10.2105L9.73684 10.9176L10.0904 10.5641L9.38329 9.85697ZM11.8421 8.10526L12.1957 8.45882L12.5492 8.10526L12.1957 7.75171L11.8421 8.10526ZM10.0904 5.64645L9.73684 5.29289L9.02974 6L9.38329 6.35355L10.0904 5.64645ZM9.73684 10.2105L10.0904 10.5641L12.1957 8.45882L11.8421 8.10526L11.4886 7.75171L9.38329 9.85697L9.73684 10.2105ZM11.8421 8.10526L12.1957 7.75171L10.0904 5.64645L9.73684 6L9.38329 6.35355L11.4886 8.45882L11.8421 8.10526ZM11.8421 8.10526V7.60526H5V8.10526V8.60526H11.8421V8.10526Z" fill="#111111"/>
+					</svg>
+				</div>
+				<div class="swiper-button-next featured-nav">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" />
+						<path d="M9.38329 9.85697L9.02974 10.2105L9.73684 10.9176L10.0904 10.5641L9.38329 9.85697ZM11.8421 8.10526L12.1957 8.45882L12.5492 8.10526L12.1957 7.75171L11.8421 8.10526ZM10.0904 5.64645L9.73684 5.29289L9.02974 6L9.38329 6.35355L10.0904 5.64645ZM9.73684 10.2105L10.0904 10.5641L12.1957 8.45882L11.8421 8.10526L11.4886 7.75171L9.38329 9.85697L9.73684 10.2105ZM11.8421 8.10526L12.1957 7.75171L10.0904 5.64645L9.73684 6L9.38329 6.35355L11.4886 8.45882L11.8421 8.10526ZM11.8421 8.10526V7.60526H5V8.10526V8.60526H11.8421V8.10526Z" fill="#111111"/>
+					</svg>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+
+		<section>
+			<div class="container__lg">
+				<div class="faq-wrap">
+					<h2>Frequently asked questions</h2>
+					<p>Answers to our most frequently asked questions are just one click away.</p>
+
+					<div class="faq-list">
+						<div class="faq-item" data-faq>
+							<div class="faq-question">
+								<span>What are Nike's delivery options?</span>
+								<span class="faq-toggle">+</span>
+							</div>
+							<div class="faq-answer">
+								Nike offers standard, express, and next-day delivery depending on your region and order details.
+							</div>
+						</div>
+
+						<div class="faq-item active" data-faq>
+							<div class="faq-question">
+								<span>What is Nike's returns policy?</span>
+								<span class="faq-toggle">−</span>
+							</div>
+							<div class="faq-answer">
+								When you shop Nike online, either in the Nike App or on Nike.com, you can return items that are unworn and unwashed and still have their product tags attached within 30 days of purchase (some exceptions apply). That includes custom Nike By You sneakers.
+							</div>
+						</div>
+
+						<div class="faq-item" data-faq>
+							<div class="faq-question">
+								<span>Where is my Nike order?</span>
+								<span class="faq-toggle">+</span>
+							</div>
+							<div class="faq-answer">
+								You can track your order through your account on Nike.com or via the Nike App under "Orders".
+							</div>
+						</div>
+
+						<div class="faq-item" data-faq>
+							<div class="faq-question">
+								<span>How do I find the right size and fit?</span>
+								<span class="faq-toggle">+</span>
+							</div>
+							<div class="faq-answer">
+								Use the Nike Fit Guide or size chart available on each product page to find your perfect fit.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+
+		<section>
+			<div class="container__md">
+				<div class="product__wrap">
+					<div class="product__badge">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10 13.0721L7.11574 14.6666L7.66671 11.2895L5.33337 8.89805L8.55789 8.40571L10 5.33325L11.4422 8.40571L14.6667 8.89805L12.3334 11.2895L12.8843 14.6666L10 13.0721Z" fill="#111111" stroke="#111111" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<span>Highly Rated</span>
+					</div>
+
+					<div class="product__gallery">
+
+						<div class="swiper red-sneakers-2 active">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="image/products/red_sneakers/main.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/red_sneakers/1_red_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/red_sneakers/2_red_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/red_sneakers/3_red_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/red_sneakers/4_red_sneakers.png" />
+								</div>
+							</div>
+						</div>
+						<div thumbsSlider="" class="swiper red-sneakers active">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="image/products/red_sneakers/main.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/red_sneakers/1_red_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/red_sneakers/2_red_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/red_sneakers/3_red_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/red_sneakers/4_red_sneakers.png" />
+								</div>
+							</div>
+						</div>
+
+
+						<div class="swiper dark-sneakers-2">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="image/products/dark_sneakers/main_dark_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/dark_sneakers/1_dark_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/dark_sneakers/2_dark_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/dark_sneakers/3_dark_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/dark_sneakers/4_dark_sneakers.png" />
+								</div>
+							</div>
+						</div>
+						<div thumbsSlider="" class="swiper dark-sneakers">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="image/products/dark_sneakers/main_dark_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/dark_sneakers/1_dark_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/dark_sneakers/2_dark_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/dark_sneakers/3_dark_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/dark_sneakers/4_dark_sneakers.png" />
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper white-sneakers-2">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="image/products/white_sneakers/main_white_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/white_sneakers/1_white_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/white_sneakers/2_white_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/white_sneakers/3_white_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/white_sneakers/4_white_sneakers.png" />
+								</div>
+							</div>
+
+						</div>
+						<div thumbsSlider="" class="swiper white-sneakers">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="image/products/white_sneakers/main_white_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/white_sneakers/1_white_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/white_sneakers/2_white_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/white_sneakers/3_white_sneakers.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="image/products/white_sneakers/4_white_sneakers.png" />
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="product__details">
+						<h1>Nike Air Max Plus</h1>
+						<p id="price">$280.00</p>
+
+						<div class="color-options">
+							<img src="image/products/white_sneakers/main_white_sneakers.png" data-color="white" data-price="270.00" />
+							<img src="image/products/dark_sneakers/main_dark_sneakers.png" data-color="black" data-price="275.00" />
+							<img src="image/products/red_sneakers/main.png" data-color="red" data-price="280.00" class="active" />
+						</div>
+
+						<div class="size-wrap">
+							<h2>Select Size:</h2>
+							<div class="size-options">
+								<button class="size">UK 5.5</button>
+								<button class="size active">UK 6 (EU 39)</button>
+								<button class="size">UK 6 (EU 40)</button>
+								<button class="size">UK 6.5</button>
+								<button class="size">UK 7</button>
+								<button class="size">UK 7.5</button>
+							</div>
+						</div>
+
+
+						<button class="add-to-bag">Add To Bag</button>
+
+						<p class="desc">
+							Let your attitude have the edge in your Nike Air Max Plus, a Tuned Air experience that offers premium stability and unbelievable cushioning.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+
+		<section>
+			<div class="container__lg">
+				<div class="help-form">
+					<h2 class="help-form__title">Need help?</h2>
+
+					<form class="help-form__form" id="helpForm">
+						<div class="help-form__row">
+							<div class="help-form__input-group">
+								<label class="help-form__label" for="name">Name</label>
+								<input class="help-form__input" type="text" id="name" placeholder="Enter name" required />
+							</div>
+
+							<div class="help-form__input-group">
+								<label class="help-form__label" for="number">Number</label>
+								<input class="help-form__input" type="tel" id="number" placeholder="Enter Number" required />
+							</div>
+						</div>
+
+						<div class="help-form__input-group">
+							<label class="help-form__label" for="email">Email</label>
+							<input class="help-form__input" type="email" id="email" placeholder="Enter Email" required />
+						</div>
+
+						<div class="help-form__input-group">
+							<label class="help-form__label" for="message">Message</label>
+							<textarea class="help-form__textarea" id="message" placeholder="Enter Message" required></textarea>
+						</div>
+
+						<button class="help-form__submit" type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container__lg">
+				<div class="footer">
+					<div class="footer__top">
+						<div class="footer__section">
+							<button class="footer__accordion" aria-expanded="false">
+								Resources
+								<span class="accordion__icon"></span>
+							</button>
+							<ul class="footer__list">
+								<li><a href="#">Find a Store</a></li>
+								<li><a href="#">Nike Journal</a></li>
+								<li><a href="#">Become a Member</a></li>
+								<li><a href="#">Feedback</a></li>
+								<li><a href="#">Promo Codes</a></li>
+							</ul>
+						</div>
+
+						<div class="footer__section">
+							<button class="footer__accordion" aria-expanded="true">
+								Help
+								<span class="accordion__icon"></span>
+							</button>
+							<ul class="footer__list open">
+								<li><a href="#">Get Help</a></li>
+								<li><a href="#">Order Status</a></li>
+								<li><a href="#">Shipping and Delivery</a></li>
+								<li><a href="#">Returns</a></li>
+								<li><a href="#">Payment Options</a></li>
+							</ul>
+						</div>
+
+						<div class="footer__section">
+							<button class="footer__accordion" aria-expanded="false">
+								Company
+								<span class="accordion__icon"></span>
+							</button>
+							<ul class="footer__list">
+								<li><a href="#">About Nike</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Investors</a></li>
+								<li><a href="#">Sustainability</a></li>
+							</ul>
+						</div>
+
+						<div class="footer__section">
+							<button class="footer__accordion" aria-expanded="false">
+								Menu
+								<span class="accordion__icon"></span>
+							</button>
+							<ul class="footer__list">
+								<li><a href="#">New & Featured</a></li>
+								<li><a href="#">Men</a></li>
+								<li><a href="#">Women</a></li>
+								<li><a href="#">Kids</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer__bottom">
+						<ul class="footer__bottom-links">
+							<li><p>© 2025 Stellar Soft</p></li>
+							<li><a href="#">Terms of Use</a></li>
+							<li><a href="#">Privacy & Cookie Policy</a></li>
+							<li><a href="#">Privacy & Cookie Setting</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<div class="banner-pop-up">
+
+				<div class="banner-pop-up__container">
+
+					<button id="banner-pop-up-close-btn" type="button" class="baner-pop-up__close-btn">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 24 24">
+							<path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"></path>
+						</svg>
+					</button>
+
+					<div class="banner-pop-up__content">
+						<h1>HERE’S $10 OFF<br>YOUR FIRST ORDER!</h1>
+						<p>Join our newsletter and get a $10 discount code sent straight to your inbox. New customers only.</p>
+
+						<form class="banner-pop-up__form">
+							<label for="email" class="banner-pop-up__label">Email</label>
+							<input type="email" id="banner-pop-up-email" class="banner-pop-up__input" placeholder="Enter Email" required />
+							<button type="submit" id="banner-pop-up-submit-btn" class="banner-pop-up__submit-btn">Send</button>
+						</form>
+					</div>
+
+					<div class="banner-pop-up__media">
+						<img src="image/banner/nike-just-do-it 1.png"  alt="Logo" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="assets/script.js"></script>
 	</body>
 
 
 </html>
+
+
+
+
