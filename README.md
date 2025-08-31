@@ -14,7 +14,7 @@ The website is based on a Figma design provided by the client.
 4. The site will open in your default browser
 
 ### Option 2: Online (to be added later)
-https://denisgreendev.github.io/shopify-school-homepage-denys-hryniuk
+https://denisgreendev.github.io/homepage-landing-page/
 
 ---
 
