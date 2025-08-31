@@ -25,7 +25,8 @@ https://denisgreendev.github.io/homepage-landing-page/
 - **Vanilla JavaScript**
 - **Google Fonts**
 - **SVG and raster images**
-- No frameworks, libraries, or bundlers used
+- The use of the **Swiper library** for the sliders was specified in the technical brief.
+- No frameworks, libraries, or bundlers used, with the exception of the Swiper library for implementing the slider
 
 > This is a fully front-end project. No backend, APIs, or databases are involved — all content and images are stored locally.
 
